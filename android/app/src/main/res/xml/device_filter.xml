@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Cashier side: launch the app (and get permanent USB permission when the user ticks
+     "always open") when one of these devices is plugged in. -->
+<resources>
+    <!-- Terminal already switched to accessory mode (Google AOA ids 0x18D1:0x2D00 / 0x2D01). -->
+    <usb-device vendor-id="6353" product-id="11520" />
+    <usb-device vendor-id="6353" product-id="11521" />
+
+    <!-- SUNMI P3 in normal mode (MediaTek VID 0x0E8D, PID 0x201C), seen on P3 OS 3.0.39 both with
+         developer options on and off (that firmware keeps ADB on the port either way). If another
+         firmware shows a different PID, add it here (list it with tools/aoa_probe.py). Use VID+PID,
+         not VID alone: 0x0E8D is shared by every MediaTek device. Values are decimal. -->
+    <usb-device vendor-id="3725" product-id="8220" />
+
+    <!-- The app remembers a matched device as the terminal automatically. -->
+</resources>

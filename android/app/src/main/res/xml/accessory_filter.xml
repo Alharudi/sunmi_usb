@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Terminal side: launch the app when the cashier switches this device into accessory mode.
+     Must match Aoa.MANUFACTURER / Aoa.MODEL in usb/LinkTransport.kt. -->
+<resources>
+    <usb-accessory manufacturer="SunmiUsb" model="PosLink" />
+</resources>
